@@ -1,0 +1,14 @@
+﻿@model WebApplication9.Models.Doctors
+@{
+    ViewData["Title"] = "Backend5";
+}
+
+<form method="post">
+    <p>Name</p>
+    <p><input name="name" type="text" /></p>
+    <p>Speciality</p>
+    <p><input name="speciality" type="text" /></p>
+
+    <p><button type="submit">Create</button></p>
+    <p><a asp-action="Doctor">Back to list</a></p>
+</form>
