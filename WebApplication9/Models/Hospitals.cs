@@ -10,18 +10,10 @@ namespace WebApplication9.Models
     {
         public int id { get; set; }
 
-        [Required(ErrorMessage = "waiting name")]
-        [Display(Name = "Name")]
-        public string name { get; set; }
+        [Required(ErrorMessage = "Waiting name")][Display(Name = "Name")] public string name { get; set; }
 
-        [Required(ErrorMessage = "waiting adress")]
-        [Display(Name = "Adress")]
-        public string adress { get; set; }
+        [Required(ErrorMessage = "Waiting adress")][Display(Name = "Adress")] public string adress { get; set; }
 
-        [Required(ErrorMessage = "waiting phone")]
-        [Display(Name = "Phones")]
-        //[RegularExpression(@"^(?([0-9]{3}))?[-. ]?([0-9]{3})[-. ]?([0-9]{5})$", ErrorMessage = "Wrong phone")]
-        [DataType(DataType.PhoneNumber)]
-        public string phones { get; set; }
+        [Required(ErrorMessage = "Waiting phone")][Display(Name = "Phones")][DataType(DataType.PhoneNumber)] public string phones { get; set; }
     }
 }

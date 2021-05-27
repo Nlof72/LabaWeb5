@@ -6,9 +6,10 @@
 <form method="post">
     <p>Name</p>
     <p><input asp-for="name" /></p>
+    <span asp-validation-for="name" class="text-danger"></span>
     <p>Adress</p>
     <p><input asp-for="adress" /></p>
-
+    <span asp-validation-for="adress" class="text-danger"></span>
 
     <p><button type="submit">Save</button></p>
     <p><a asp-action="Lab">Back to list</a></p>
